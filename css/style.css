@@ -1,8 +1,4 @@
-/* #4 #sweat #external css file */
-
-/* GLOBAL */
-
-/* #4 #global styles*/
+/*Global*/
 
 * {
     /* #4 use #roboto #font */
@@ -14,12 +10,11 @@
 
 }
 
+/*giving background color as grey*/
+
 body {
     background-color: #F5F5F5;
-
 }
-
-#entire {}
 
 /* #4 # sweat #uppercase buttons and w3w locations */
 
@@ -30,25 +25,25 @@ strong {
     height: auto;
 }
 
-
-
 /* APP BAR */
 
-/* #4 #sweat address both #app-bar s */
+/*APP Bar styling*/
 
 .chat {
     background-color: #3F51B5;
     color: white;
-
     height: 66px;
 
-
 }
+
+/*APP BAR- chatter|app font styling*/
 
 .chat h1 {
     font-size: 20px;
     font-weight: normal;
 }
+
+/*APP BAR-Moocus, the chatty duck positioning*/
 
 #channels > .chat img {
     position: absolute;
@@ -56,16 +51,22 @@ strong {
     top: 10px;
 }
 
+/*APP BAR-chatter|app positioning*/
+
 #chatbar {
     position: absolute;
     left: 80px;
     top: 20px;
 }
 
+/*APP BAR-Messages App Bar positioning*/
+
 #channelbar {
     position: absolute;
     top: 20px;
 }
+
+/*APP BAR-Messages App Bar Star Image positioning*/
 
 .chat #channelbarimage {
     position: absolute;
@@ -73,32 +74,45 @@ strong {
 
     right: 0;
 }
-
-/* CHANNELS LIST */
-
 /* #4 #sweat #channels */
+
+/*Channel List positioning to left*/
 
 #channels {
 
     position: absolute;
     left: 0;
     width: 40%;
-    height: 109%;
+    height: 100%;
     background-color: white;
 }
+
+/*Messages list positioning to right*/
 
 #chat {
 
     position: absolute;
     right: 0;
     width: 60%;
+    height: 100%;
 
 }
+
+/* Position your channel list below the app-bar and above the tab-bar. Now, only the channel list should #scroll*/
 
 #channellist {
     overflow: auto;
     height: 80%;
 }
+
+/* Position your message list below the app-bar and above the tab-bar. Now, only the channel list should #scroll*/
+
+#channelmessages {
+    overflow: auto;
+    height: 80%;
+}
+
+/* CHANNELS LIST */
 
 ul {
     /* #3 #channels #list modifies h2 to ul */
@@ -126,6 +140,8 @@ li.selected {
     border-left: 4px solid #3F51B5;
 }
 
+/*Star and Arrow images in Channels list positioning*/
+
 .channel-meta {
     vertical-align: middle;
     float: right;
@@ -133,7 +149,7 @@ li.selected {
 
 /* TAB BAR */
 
-/* #4 #sweat #tab-bar */
+/* tab-bar, emoji button ,chatbar styling */
 
 #tab-bar,
 #chat-bar,
@@ -142,31 +158,16 @@ li.selected {
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
     text-align: center;
-
-    /*position: absolute;
-    bottom: 0;*/
     display: flex;
     justify-content: space-between;
-    /*  height: 20%;*/
 }
 
-#chat-bar button {
-    display: flex;
-    justify-content: flex-start;
-    background-color: white;
-    border: none;
-    height: 72px;
-    padding: 16px;
-}
-
-
-/* #4 add styles to #tab-bar #buttons */
+/* #4 add styles to #tab-bar #buttons - CENTERING buttons*/
 
 #tab-bar button {
     background-color: white;
     border: none;
     font-size: 13px;
-
     /* #4 #tab-bar buttons have a width of #one-third of the available space */
     width: 33%;
     height: 72px;
@@ -203,6 +204,7 @@ li.selected {
     margin-bottom: 8px;
 }
 
+/*metadata positioning*/
 
 .message h3 {
     font-size: medium;
@@ -210,6 +212,8 @@ li.selected {
     justify-content: space-between;
     align-items: stretch;
 }
+
+/*Time in messages positioning*/
 
 .message h3 em {
     font-size: larger;
@@ -224,17 +228,22 @@ li.selected {
     color: black;
 }
 
+/*messages styling*/
+
 .message p {
     background-color: white;
     padding: 16px;
 
 }
 
+/*messages styling*/
+
 .message .minbutton {
     background-color: white;
 
-
 }
+
+/* +5min button styling*/
 
 .message p span {
 
@@ -243,17 +252,12 @@ li.selected {
     position: relative;
     top: 8px;
     left: 8px;
-
-
-
 }
 
 .message button {
     background-color: #CDDC39;
     color: black;
     text-transform: uppercase;
-
-
 }
 
 /* #4 left align own #messages using #margins */
@@ -261,6 +265,19 @@ li.selected {
 .message.own {
     margin-left: 17.5%;
 }
+
+/*emoji button styling*/
+
+#chat-bar button {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    border: none;
+    height: 72px;
+    padding: 16px;
+}
+
+/*emojis list displaying*/
 
 #emojis {
     background-color: white;
