@@ -247,11 +247,11 @@ li.selected {
 
 .message p span {
 
-    display: flex;
-    justify-content: flex-end;
+
     position: relative;
     top: 8px;
     left: 8px;
+    float: right;
 }
 
 .message button {
