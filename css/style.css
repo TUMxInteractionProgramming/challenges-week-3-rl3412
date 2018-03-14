@@ -11,15 +11,24 @@
      /* #4 #sweat take care of #spacing between various elements */
     margin: 0;
     padding: 0;
+   
 }
 
 body {
     background-color: #F5F5F5;
+    
+}
+
+#entire{
+ 
+    
 }
 
 /* #4 # sweat #uppercase buttons and w3w locations */
 button, strong {
     text-transform: uppercase;
+     width: auto;
+    height: auto;
 }
 
 
@@ -27,20 +36,70 @@ button, strong {
 /* APP BAR */
 
 /* #4 #sweat address both #app-bar s */
-h1 {
+.chat {
     background-color: #3F51B5;
     color: white;
-}
 
+    height: 66px;
+  
+
+}
+.chat h1{
+        font-size: 20px;
+    font-weight: normal;
+}
+#channels > .chat img{
+    position: absolute;
+    left: 20px;
+    top:10px;
+}
+#chatbar{
+   position: absolute;
+    left: 80px;
+    top:20px;   
+}
+#channelbar{
+      position: absolute;
+    top:20px; 
+}
+.chat #channelbarimage{
+    position: absolute;  
+        top:20px; 
+
+    right: 0;
+}
 
 /* CHANNELS LIST */
 
 /* #4 #sweat #channels */
+
+#channels{
+    
+        position: absolute;
+    left: 0;
+    width: 40%;
+    height: 109%;
+    background-color: white;
+}
+#chat{
+    
+        position: absolute;
+    right: 0;
+    width: 60%;
+
+}
+#channellist{
+    overflow: auto;
+    height: 80%;
+}
 ul {
     /* #3 #channels #list modifies h2 to ul */
-    background-color: white;
+    background-color: #FFFFFF;
     /* #3 #channels #bullets removed */
     list-style-type: none;
+   /* height: 81%;*/
+   
+
 }
 
 li {
@@ -51,6 +110,7 @@ li {
     font-size: 16px;
     /* #4 #channel tiles are separated by #lines */
     border-bottom: 1px solid #F5F5F5;
+    
 }
 
 /* #4 active #channel is #highlighted */
@@ -59,20 +119,35 @@ li.selected {
     border-left: 4px solid #3F51B5;
 }
 
-li img {
-    /* #4 #middle vertical alignment of icons in the #channels list */
-    vertical-align: middle;
+.channel-meta{
+vertical-align: middle;
+   float: right;
 }
 
 /* TAB BAR */
 
 /* #4 #sweat #tab-bar */
-#tab-bar {
+#tab-bar,#chat-bar,#emojis-button{
     /* #3 #tab-bar #container should be white */
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
     text-align: center;
+       
+   /*position: absolute;
+    bottom: 0;*/
+     display: flex;
+    justify-content: space-between;
+  /*  height: 20%;*/
 }
+#chat-bar button{
+display: flex;
+    justify-content: flex-start;
+     background-color: white;
+    border: none;
+    height: 72px;
+    padding: 16px;
+}
+
 
 /* #4 add styles to #tab-bar #buttons */
 #tab-bar button {
@@ -84,6 +159,7 @@ li img {
     width: 33%;
     height: 72px;
     padding: 16px;
+   
 }
 
 /* #4 #tab-bar buttons do have a #line-break and images are centered due to the left&right auto margin */
@@ -95,12 +171,12 @@ li img {
 /* #4 the selected #tab-bar #button is #highlighted */
 #tab-bar button.selected {
     color: #3F51B5;
-    border-bottom: 4px solid #3F51B5;
 }
 
 
 /* MESSAGES */
 /* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
+
 .message {
     /* #3 #chat #width*/
     width: 80%;
@@ -115,11 +191,17 @@ li img {
 
 .message h3 {
     font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .message h3 em {
     font-size: larger;
     font-style: normal;
+    min-width: 100px;
+    max-width: 100px;
+
 }
 
 .message h3 a {
@@ -130,12 +212,32 @@ li img {
 .message p {
     background-color: white;
     padding: 16px;
+    
+}
+.message #minbutton{
+        background-color: white;
+
+    
+}
+
+.message p span{
+
+display: flex;
+justify-content: flex-end;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    
+    
+    
 }
 
 .message button {
     background-color: #CDDC39;
     color: black;
     text-transform: uppercase;
+  
+    
 }
 
 /* #4 left align own #messages using #margins */
@@ -143,3 +245,17 @@ li img {
     margin-left: 17.5%;
 }
 
+#emojis{
+    background-color: white;
+    border: 1px solid black;
+    font-size: 28px;
+    padding: 16px;
+    text-align: left;
+    overflow: scroll;
+    margin-left: 16px;
+    position: absolute;
+        bottom: 55px;
+    max-width: 40%;
+
+    
+}
