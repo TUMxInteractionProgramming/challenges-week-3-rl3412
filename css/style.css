@@ -29,7 +29,8 @@ strong {
 
 /*APP Bar styling*/
 
-.chat {
+.chat,
+.chat a {
     background-color: #3F51B5;
     color: white;
     height: 66px;
@@ -74,6 +75,7 @@ strong {
 
     right: 0;
 }
+
 /* #4 #sweat #channels */
 
 /*Channel List positioning to left*/
@@ -233,31 +235,21 @@ li.selected {
 .message p {
     background-color: white;
     padding: 16px;
+    position: relative;
 
 }
 
-/*messages styling*/
 
-.message .minbutton {
-    background-color: white;
-
-}
 
 /* +5min button styling*/
-
-.message p span {
-
-
-    position: relative;
-    top: 8px;
-    left: 8px;
-    float: right;
-}
 
 .message button {
     background-color: #CDDC39;
     color: black;
     text-transform: uppercase;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
 }
 
 /* #4 left align own #messages using #margins */
@@ -290,6 +282,7 @@ li.selected {
     position: absolute;
     bottom: 55px;
     max-width: 40%;
-
-
+    display: none;
+    /*Add a piece of code, that #hides the emojis menu initially. 
+*/
 }
