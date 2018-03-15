@@ -282,7 +282,8 @@ li.selected {
     position: absolute;
     bottom: 55px;
     max-width: 40%;
-    display: none;
-    /*Add a piece of code, that #hides the emojis menu initially. 
+      /*Add a piece of code, that #hides the emojis menu initially. 
 */
+    display: none;
+  
 }
